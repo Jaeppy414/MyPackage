@@ -33,6 +33,6 @@ public func createAccountsAsync(mainNet: [String], completion: @escaping (String
         }
         let jsonData = try! JSONSerialization.data(withJSONObject: results)
         let jsonString = String(data: jsonData, encoding: .utf8)!
-        completion(jsonString)
+        completion(jsonString) 
     }
 }
